@@ -12,6 +12,7 @@ import LatestPosts from '~/components/blog/LatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Contact from '~/components/widgets/Contact.astro';
 
 const meta = {
   title: SITE.title,
@@ -24,21 +25,21 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+    callToAction={{ text: 'Contact us on Whatsapp', href: 'https://wa.me/918141403236', icon: 'ic:baseline-whatsapp' }}
+    callToAction2={{ text: 'or E-mail us!', href: '#features'}}
+    image={{ src: import('~/assets/images/hero_lala.png'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS    </Fragment>
+      Find your digital space with
+      <span class="text-accent dark:text-white highlight"> Sarang</span> developers
+    </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0 +
-        Tailwind CSS.</span
+        <span class="font-semibold">Sarang developers</span>, based in Ahmedabad, offers cutting-edge web and mobile app
+        solutions to diverse clients. We cater to Startups, Small & Large Businesses, and individuals with utmost
+        proficiency. We cater to Startups, Small & Large Businesses, and individuals with utmost proficiency.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> Suitable for Startups,
-      Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
     </Fragment>
   </Hero>
 
@@ -49,56 +50,64 @@ const meta = {
   <!-- Features Widget *************** -->
 
   <Features
-    highlight="Features"
-    title="What you get with AstroWind"
-    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+    highlight=""
+    title="Our offerings"
+    subtitle="We offer varied services and we aim to excel at those services."
     items={[
       [
         {
-          title: 'Astro + Tailwind CSS Integration',
+          title: 'Website development',
           description:
-            'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-          icon: 'tabler:brand-tailwind',
+            'We offer innovative and efficient website development using the latest technologies and design principles.',
+          icon: 'tabler:browser',
         },
         {
-          title: 'Ready-to-use Components',
+          title: 'Automation Services',
           description:
-            'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-          icon: 'tabler:components',
+            'Streamline your business processes with our reliable and efficient automation services, saving time and reducing costs.',
+          icon: 'tabler:robot',
         },
         {
-          title: 'Best Practices',
+          title: 'Cloud services',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:list-check',
+            'Secure, reliable and fast cloud services to ensure your web apps are always accessible and performs at their best.',
+          icon: 'tabler:cloud-upload',
         },
       ],
       [
         {
-          title: 'Excellent Page Speed',
+          title: 'AI Integration Services',
           description:
-            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-          icon: 'tabler:rocket',
+            'We empower you to integrate leading AI models like ChatGPT into your systems, enhancing user interactions with AI capabilities.',
+          icon: 'tabler:grain',
+        },
+
+        {
+          title: 'UI/UX Design',
+          description:
+            'We create intuitive and engaging user interfaces that offer a seamless user experience and enhance user satisfaction.',
+          icon: 'ic:baseline-design-services',
         },
         {
-          title: 'Search Engine Optimization (SEO)',
+          title: 'E-commerce development',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:arrows-right-left',
-        },
-        {
-          title: 'Open to new ideas and contributions',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:bulb',
+            'Our e-commerce development services can help you create a robust and versatile online store that delivers a seamless shopping experience.',
+          icon: 'tabler:shopping-cart',
         },
       ],
     ]}
   />
+ <!-- HighlightedPosts Widget ******* -->
 
+ <LatestPosts
+ title="Know more about the work we do."
+ information={` Check out some of the work we have done. We take pride in what we do 
+                to bring out the best digital versions of our customers.                
+             `}
+/>
   <!-- Content Widget **************** -->
 
-  <Content
+  <!--  <Content
     highlight="Inside template"
     title="And what's inside? ..."
     items={[
@@ -128,11 +137,11 @@ const meta = {
       Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
       tacimates.
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     isAfterContent
     items={[
@@ -160,37 +169,43 @@ const meta = {
       alt: 'Vintage Image',
     }}
   />
-
+ -->
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Get your dream project up and running in no time with Sarang."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
-        icon: 'tabler:package',
+        title: 'Step 1: <span class="font-medium">Requirements Gathering</span>',
+        description: 'We start by collaborating with the client to define and understand their needs and requirements.',
+        icon: 'tabler:clipboard-list',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-        icon: 'tabler:letter-case',
+        title: 'Step 2: <span class="font-medium">Design and Prototyping</span>',
+        description: 'Based on the requirements, we create an initial design and a working prototype of the solution.',
+        icon: 'tabler:brush',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Iteration and Development</span>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-        icon: 'tabler:paint',
+          'Using Agile methodologies, we develop the solution incrementally through iterations, incorporating client feedback at each step.',
+        icon: 'tabler:repeat',
       },
       {
-        title: 'Ready!',
-        icon: 'tabler:check',
+        title: 'Step 4: <span class="font-medium">Testing and Deployment</span>',
+        description:
+          'Each feature is thoroughly tested for functionality and usability. Once validated, the solution is deployed.',
+        icon: 'tabler:cloud-upload',
+      },
+      {
+        title: 'Step 5: <span class="font-medium">Review and Maintenance</span>',
+        description:
+          'Post-deployment, we continuously review the solution based on user feedback and provide necessary maintenance.',
+        icon: 'tabler:tools',
       },
     ]}
     image={{
-      src: import('~/assets/images/creativity.jpg'),
+      src: import('~/assets/images/agile.webp'),
       alt: 'Steps image',
     }}
   />
@@ -198,76 +213,50 @@ const meta = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    highlight="Components"
+    title="Why us?"
+    subtitle="Find out why more than 30 brands chose us!"
+    highlight=""
     items={[
       {
-        title: 'Headers',
+        title: '1. Expert Design',
         description:
-          'In general, Headers contain information that makes it easier for visitors to interact with the website.',
+          'At Sarang Developers, we understand the power of first impressions. Our expertly designed Headers and Hero sections ensure your website immediately captivates visitors.',
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
+        title: '2. Tailored Features',
         description:
-          'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.',
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Display your product in action and how the Features actually create a solution for your target customer.',
+          "We make your product shine. By showcasing your product's features in action, we help customers understand the unique solutions you provide.",
         icon: 'flat-color-icons:todo-list',
       },
       {
-        title: 'Content',
+        title: '3. Engaging Content',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Our team of skilled content creators ensures that the content on your site is compelling, engaging, and beautifully presented.',
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
+        title: '4. Persuasive Call-to-Action',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'We understand the importance of a powerful call-to-action. Our team designs persuasive prompts that drive conversions and increase customer engagement.',
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
+        title: '5. Transparent Pricing',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'At Sarang Developers, we believe in transparent and fair pricing. We provide clear and concise pricing details, helping customers make informed decisions.',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Testimonial',
+        title: '6. Reliable Support',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Customer satisfaction is our priority. Our dedicated support team is always available to help, ensuring a smooth experience from the first contact to the final implementation.',
         icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'icon-park:page-template',
       },
     ]}
   />
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  <LatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
+ 
 
   <!-- FAQs Widget ******************* -->
 
@@ -278,55 +267,57 @@ const meta = {
     items={[
       [
         {
-          question: 'What do I need to start?',
+          question: 'What do I need to start working with Sarang Developers?',
           answer:
-            'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+            'To start, we require a clear idea of your project requirements, goals, and timelines. We then use this information to craft a personalized solution.',
         },
         {
-          question: 'How to install the Astro + Tailwind CSS template?',
+          question: 'How do I integrate the services of Sarang Developers?',
           answer:
-            "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.",
+            "We provide comprehensive support to help you seamlessly integrate our services. Our team will guide you through the installation and setup process to ensure a smooth transition.",
         },
         {
-          question: "What's something that you don't understand?",
+          question: "What if there's a feature that I don't understand?",
           answer:
-            "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+            "Our dedicated customer support is always ready to help. If you encounter any challenges or have any questions about a feature, you can reach out to us for clarification and assistance.",
         },
       ],
       [
         {
-          question: "What's an example of when you changed your mind?",
+          question: "What if I change my mind about a feature or requirement?",
           answer:
-            "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+            "We follow agile methodologies which allow us to adapt to changes easily. If you change your mind about a feature or requirement, we can adjust our development process accordingly.",
         },
         {
-          question: 'What is something that you would like to try again?',
+          question: 'What if I want to redevelop or enhance an existing product?',
           answer:
-            "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+            "Absolutely! We are well-versed in redesigning and enhancing existing products to meet current market trends and user needs. Just share your requirements with us.",
         },
         {
-          question: 'If you could only ask one question to each person you meet, what would that question be?',
+          question: 'What is the one thing that sets Sarang Developers apart?',
           answer:
-            "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+            "Our commitment to delivering quality and customer satisfaction sets us apart. We strive to create solutions that not only meet but exceed our clients' expectations.",
         },
       ],
     ]}
+
   />
 
   <!-- Stats Widget ****************** -->
 
   <Stats
     items={[
-      { name: 'Downloads', value: '132K' },
-      { name: 'Stars', value: '24.8K' },
-      { name: 'Forks', value: '10.3K' },
-      { name: 'Users', value: '48.4K' },
+      { name: 'Projects', value: '42' },
+      { name: 'Customers', value: '30' },
+      { name: 'Brand Parternerships', value: '4' },
+      { name: 'Years of experience', value: '12' },
     ]}
   />
 
+  <Contact/>
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
+  <!--  <CallToAction
     callToAction={{
       text: 'Get template',
       href: 'https://github.com/onwidget/astrowind',
@@ -341,5 +332,5 @@ const meta = {
       Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
       waste more time! :P
     </Fragment>
-  </CallToAction>
+  </CallToAction> -->
 </Layout>

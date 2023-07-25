@@ -2,7 +2,7 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    {
+/*     {
       text: 'Landing',
       links: [
         {
@@ -47,21 +47,45 @@ export const headerData = {
           href: getPermalink('/privacy'),
         },
       ],
+    }, */
+    {
+      text: 'Services',
+      href: '/#services',
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'Projects',
+      href: '/#projects',
     },
     {
-      text: 'Blog',
-      href: getBlogPermalink(),
+      text: 'Why Us?',
+      href: '/#why-us',
+    },
+    {
+      text: 'FAQs',
+      href: '/#faqs',
+    },
+    {
+      text: 'Contact',
+      href: '/#contact',
     },
   ],
-  actions: [{ type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }],
 };
 
 export const footerData = {
-  links: [
+ /*  links:[    {
+    title: 'Navigation',
+    links: [
+      { text: 'Go to the top', href: '#' },
+      { text: 'Services', href: '#services' },
+      { text: 'Projects', href: '#projects' },
+      { text: 'Why us', href: '#why-us' },
+      { text: 'FAQs', href: '#faqs' },
+      { text: 'Contact', href: '#contact' },
+     
+    ],
+  },
+  ], */
+  /* links: [
     {
       title: 'Product',
       links: [
@@ -106,20 +130,18 @@ export const footerData = {
         { text: 'Shop', href: '#' },
       ],
     },
-  ],
+  ], */
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
-  socialLinks: [
+ /*  socialLinks: [
     { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
-  ],
-  footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
-  `,
+  ], */
+  /* footNote: `Made with Astro.js <3
+  `, */
 };

@@ -1,15 +1,15 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'AstroWind',
+  name: 'Sarang',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://sarangdevelopers.com',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
+  title: 'Sarang Developers',
   description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+    "Empowering Your Online Success: Innovative Web Development Services to Transform Your Digital Frontier!",
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
@@ -25,7 +25,7 @@ const CONFIG = {
   }),
 
   googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
+  googleSiteVerificationId: '',
 
   blog: {
     disabled: false,
@@ -38,7 +38,7 @@ const CONFIG = {
     },
 
     list: {
-      pathname: 'blog', // Blog main path, you can change this to "articles" (/articles)
+      pathname: 'projects', // Blog main path, you can change this to "articles" (/articles)
       noindex: false,
       disabled: false,
     },
