@@ -10,7 +10,7 @@ const CONFIG = {
   title: 'Sarang Developers',
   description:
     "Empowering Your Online Success: Innovative Web Development Services to Transform Your Digital Frontier!",
-  defaultImage: defaultImage,
+  
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
