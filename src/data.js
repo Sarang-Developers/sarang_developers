@@ -54,7 +54,7 @@ export const headerData = {
     },
     {
       text: 'Projects',
-      href: '/#projects',
+      href: '/projects',
     },
     {
       text: 'Why Us?',

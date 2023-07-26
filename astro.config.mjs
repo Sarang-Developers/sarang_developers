@@ -59,7 +59,6 @@ export default defineConfig({
       logger: 1,
     }),
   ],
-
   vite: {
     resolve: {
       alias: {
